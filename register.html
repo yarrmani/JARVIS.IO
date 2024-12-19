@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Jarvis.io</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #e3e3e3;
+    }
+    header {
+      background-color: white;
+    }
+  </style>
+</head>
+<body class="font-sans w-full h-full">
+  <!-- Header with white background -->
+  <header class="flex justify-between items-center p-6 w-full">
+    <div class="text-2xl font-bold">
+      JARVIS.IO
+    </div>
+    <nav class="space-x-8 text-lg">
+ <a class="hover:underline" href="file:///C:/Users/Hashir/Downloads/ict%20project/home.html">HOME</a>
+    <a class="hover:underline" href="file:///C:/Users/Hashir/Downloads/ict%20project/catalogue.html">CATALOGUE</a>
+    <a class="hover:underline" href="file:///C:/Users/Hashir/Downloads/ict%20project/about%20us.html">ABOUT</a>
+    <a class="hover:underline" href="file:///C:/Users/Hashir/Downloads/ict%20project/Contact.html">CONTACT</a>
+      <a class="hover:underline" href="file:///C:/Users/Hashir/Downloads/ict%20project/signin.html#">SIGN IN</a>
+      <a class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800" href="file:///C:/Users/Hashir/Downloads/ict%20project/register.html?">REGISTER</a>
+    </nav>
+  </header>
+  
+
+ <main class="flex min-h-[70vh] w-full">
+  <!-- Embedding the 3D Model on the Left -->
+  <div class="w-2/3 flex items-center justify-start">
+    <iframe 
+      src="https://my.spline.design/nexbotrobotcharacterconcept-71985a43f467be771167688b75a49c0f/" 
+      frameborder="0" 
+      width="100%" 
+      height="500px"
+      class="max-w-full">
+    </iframe>
+  </div>
+
+  <!-- Register Box on the Right -->
+  <div class="w-1/3 flex items-center justify-end">
+    <div class="relative w-full max-w-lg mx-auto">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Create Your Account</h2>
+        <form class="space-y-4" action="file:///C:/Users/Hashir/Downloads/ict%20project/home.html" method="POST">
+          <!-- Name Field -->
+          <input 
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            placeholder="Enter Name" 
+            type="text" 
+            required />
+
+          <!-- Email Field -->
+          <input 
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            placeholder="Enter Email" 
+            type="email" 
+            required />
+
+          <!-- Phone Number Field -->
+          <input 
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            placeholder="Enter Phone Number" 
+            type="tel" 
+            required />
+
+          <!-- Password Field -->
+          <input 
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            placeholder="Enter Password" 
+            type="password" 
+            required />
+
+          <!-- Confirm Password Field -->
+          <input 
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            placeholder="Confirm Password" 
+            type="password" 
+            required />
+
+          <!-- Terms and Conditions -->
+          <div class="flex items-center">
+            <input type="checkbox" class="h-4 w-4 border-gray-300 text-blue-500 focus:ring-blue-500" required />
+            <span class="ml-2 text-sm text-gray-500">
+              By signing up, you agree to our 
+              <a class="text-blue-500 hover:underline" href="#">Terms & Conditions</a> and 
+              <a class="text-blue-500 hover:underline" href="#">Privacy Policy</a>.
+            </span>
+          </div>
+
+          <!-- Register Button -->
+          <button class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 mt-8" type="submit">
+    <input type="submit" value="Login">
+  </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>

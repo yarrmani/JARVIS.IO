@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarvis.io</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    
+    .product-box {
+      position: relative;
+      width: 200px;
+      height: 250px;
+      background: #f5f5f5; /* Light Grey Color */
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: visible; /* Ensure image is not cut off */
+    }
+
+    /* Apply styling to product images */
+    .product-box img {
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: auto;
+      transition: 0.3s;
+      z-index: 10; /* Ensure the image is in the frontmost layer */
+    }
+
+    /* Hover effect for images */
+    .product-box:hover img {
+      top: -20%;
+      transform: translateX(-50%) scale(1.1);
+    }
+
+    .product-details {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #333;
+      z-index: 1; /* Place the details behind the image */
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .product-price {
+      font-size: 16px;
+      margin: 5px 0;
+      color: #333; /* Changed price color to black */
+    }
+
+    .product-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-white font-sans">
+
+  <!-- Header Section -->
+  <header class="flex justify-between items-center p-6 w-full">
+    <div class="text-2xl font-bold">
+      JARVIS.IO
+    </div>
+    <nav class="space-x-8 text-lg">
+ <a class="hover:underline" href="file:///C:/Users/Hashir/Downloads/ict%20project/home.html">HOME</a>
+    <a class="hover:underline" href="file:///C:/Users/Hashir/Downloads/ict%20project/catalogue.html">CATALOGUE</a>
+    <a class="hover:underline" href="file:///C:/Users/Hashir/Downloads/ict%20project/about%20us.html">ABOUT</a>
+    <a class="hover:underline" href="file:///C:/Users/Hashir/Downloads/ict%20project/Contact.html">CONTACT</a>
+          <a class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800" href="file:///C:/Users/Hashir/Downloads/ict%20project/signin.html">SIGN UP</a>
+      <a class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800" href="file:///C:/Users/Hashir/Downloads/ict%20project/register.html?">REGISTER</a>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <div class="bg-black w-full h-16 md:h-32 lg:h-48 flex justify-center items-center">
+    <h2 class="text-white text-2xl md:text-3xl font-bold text-center">
+      Discover the Future: AI-Powered Robots Designed for Innovation
+    </h2>
+  </div>
+
+  <!-- Navigation -->
+  <main class="flex flex-col items-center justify-center w-full px-6">
+    <h1 class="text-3xl font-bold my-8">PRODUCTS</h1>
+
+    <!-- Submenu -->
+    <nav class="flex justify-center space-x-20 border-b-2 pb-2 mb-6">
+      <a href="#" class="text-gray-600 hover:text-black font-medium" onclick="showProducts('professional')">Professional</a>
+      <a href="#" class="text-gray-600 hover:text-black font-medium" onclick="showProducts('education')">Education and Industry</a>
+      <a href="#" class="text-gray-600 hover:text-black font-medium" onclick="showProducts('humanoid')">Humanoid Robot</a>
+    </nav>
+
+    <!-- Product Lineup -->
+    <div class="w-full h-auto flex items-center justify-center mt-8">
+      <div class="product-container">
+
+        <!-- Product 1 -->
+		<a href="file:///C:/Users/Hashir/Downloads/ict%20project/robo%20dog.html">
+        <div id="product1" class="product-box">
+          <img src="https://shop.unitree.com/cdn/shop/files/df9f333424ff6cc6164ce421b019fb94_300x.png?v=1718273062g" alt="Product 1">
+          <div class="product-details">
+            <p class="product-name">ROBO DOG</p>
+            <p class="product-price">$2,800.00 USD</p>
+          </div>
+        </div>
+		</a>
+        <!-- Product 2 -->
+        <div id="product2" class="product-box">
+          <img src="file://C:\Users\Hashir\Downloads\ict project\images/image-removebg-preview%20(23).png" alt="Product 2">
+          <div class="product-details">
+            <p class="product-name">Unitree G1</p>
+            <p class="product-price">Coming Soon</p>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div id="product3" class="product-box hidden">
+          <img src="file:///C:/Users/Hashir/Downloads/ict%20project/images/product3.png" alt="Product 3">
+          <div class="product-details">
+            <p class="product-name">Drawing Robot</p>
+            <p class="product-price">Coming Soon</p>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+       <a href="file:///C:/Users/Hashir/Downloads/ict%20project/nex%20bot%201.html">
+  <div id="product4" class="product-box hidden">
+    <img src="C:\Users\Hashir\Downloads\ict project\images\WhatsApp_Image_2024-12-16_at_17.40.03_8a7a9d36-removebg-preview.png" alt="Product 4">
+    <div class="product-details">
+      <p class="product-name">Nex Bot 1</p>
+      <p class="product-price">$3,500.00 USD</p>
+    </div>
+  </div>
+</a>
+
+
+        <!-- Product 5 -->
+		 <a href="file:///C:/Users/Hashir/Downloads/ict%20project/nex%20bot%202.html">
+        <div id="product5" class="product-box hidden">
+          <img src="C:\Users\Hashir\Downloads\ict project\images\black_widow___White_Night-removebg-preview.png" alt="Product 5">
+          <div class="product-details">
+            <p class="product-name">Nex Bot 2</p>
+            <p class="product-price">$10,000.00 USD</p>
+          </div>
+        </div>
+		</a>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function showProducts(category) {
+      // Hide all products initially
+      document.getElementById("product1").classList.add("hidden");
+      document.getElementById("product2").classList.add("hidden");
+      document.getElementById("product3").classList.add("hidden");
+      document.getElementById("product4").classList.add("hidden");
+      document.getElementById("product5").classList.add("hidden");
+
+      // Show products based on category
+      if (category === 'professional') {
+        document.getElementById("product1").classList.remove("hidden");
+        document.getElementById("product2").classList.remove("hidden");
+      } else if (category === 'education') {
+        document.getElementById("product3").classList.remove("hidden");
+      } else if (category === 'humanoid') {
+        document.getElementById("product4").classList.remove("hidden");
+        document.getElementById("product5").classList.remove("hidden");
+      }
+    }
+  </script>
+
+</body>
+</html>
